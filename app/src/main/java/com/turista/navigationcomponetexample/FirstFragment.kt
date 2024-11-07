@@ -19,7 +19,7 @@ class FirstFragment : Fragment() {
 
         btnNavigate.setOnClickListener{
             findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(
-                name ="tourist")
+                name ="Grabadora")
             )
         }
 

@@ -5,16 +5,78 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     tools:context=".SecondFragment">
-    
+
+
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
+        android:layout_gravity="top|center"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="40sp"
-        tools:text="Holiwi"/>
+        tools:text="Grabadora" />
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+        <ListView
+            android:id="@+id/listViewGrabaciones"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listViewGrabaciones"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Nueva Grabación"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusText"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:text="00:00"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+
+        <ImageView
+            android:id="@+id/btnGrabar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/timerText"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/grabar"
+            android:contentDescription="Botón de grabación" />
+
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGrabar"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:layout_centerHorizontal="true"
+            android:text="Cancelar Grabación" />
+
+
+    </RelativeLayout>
 
 </FrameLayout>
